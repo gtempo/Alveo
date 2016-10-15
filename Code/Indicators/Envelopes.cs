@@ -73,7 +73,7 @@ namespace Alveo.UserCode
 
             while (pos >= 0)
             {
-                ma = iMA(Symbol, TimeFrame, IndicatorPeriod, 0, (int)MovingAverageType.MODE_SMA, (int)PriceType, pos);
+                ma = iMA(Symbol, TimeFrame, IndicatorPeriod, 0, (int)MAType, (int)PriceType, pos);
                 _plusVals[pos] = devPlus*ma;
                 _minusVals[pos] = devMinus*ma;
                 pos--;
